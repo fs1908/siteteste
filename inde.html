@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VILIPE</title>
+    <link rel="sylesheet" href="style.css">
+    <style>
+        /* Estilizando o botão */
+        #meuBotao {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        /* Quando o botão for clicado */
+        #meuBotao:active {
+            background-color: green;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <h2>EU E MEU DORMINDO</h2>
+    <img src="vilipe.jpg" />
+
+    <ol>
+        <li> Amo sua buchechina rosa</li>
+        <li> Amo seu jeito maluquinha de ser</li>
+        <li> Amo quando me abraça fote</li>
+    </ol>
+
+    <p>CLIQUE NO BOTÃO SE VOCÊ ME AMA:</p>
+
+    <button id="meuBotao" onclick="mudarCor()">TE AMO MUITO!!</button>
+
+    <script>
+           function mudacor() {
+            var botao = document.getelementbyid("meubotao");
+            // adiciona a classe 'verde' ao botão, fazendo com que ele fique verde permanentemente
+                botao.classlist.add("verde");
+         }
+    </script>
+</body>
+</html>
